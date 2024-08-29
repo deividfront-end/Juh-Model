@@ -18,13 +18,7 @@ body {
 
 /*Estilização Menu */
 
-.header-menu {
-  background-color: #6e6e6e;
-  max-width: auto;
-}
-
 .container-menu {
-  background-color: #1c0455aa;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -37,12 +31,12 @@ nav {
   position: relative;
   width: 523px;
   height: 50px;
-  background: #920aab;
+  background: #930aab69;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
 
 nav a {
@@ -62,28 +56,27 @@ nav span {
   left: 0px;
   width: 523px;
   height: 100%;
-  background: #d707eead;
-
-  border-radius: 8px;
+  background: #d707ee85;
+  border-radius: 5px;
   transition: 0.5s;
 }
 nav a:nth-child(1):hover ~ span {
-  left: 34px!important;
-  width: 60px!important;
+  left: 34px !important;
+  width: 60px !important;
 }
 
 nav a:nth-child(2):hover ~ span {
-  left: 152px!important;
+  left: 152px !important;
   width: 88px;
 }
 
 nav a:nth-child(3):hover ~ span {
-  left: 295px!important;
+  left: 295px !important;
   width: 60px;
 }
 
 nav a:nth-child(4):hover ~ span {
-  left: 408px!important;
+  left: 408px !important;
   width: 80px;
 }
 li,
@@ -137,21 +130,25 @@ button {
   overflow: hidden;
   width: 100%;
   position: relative;
+  border-radius: 20px;
 }
 
 .slide .slide1 {
   width: 400px;
   height: 500px;
+  border-radius: 5px;
   float: left;
 }
 
 .slide .slide2 {
+  border-radius: 5px;
   width: 400px;
   height: 500px;
   float: left;
 }
 
 .slide .slide3 {
+  border-radius: 5px;
   width: 400px;
   height: 500px;
   float: left;
@@ -161,10 +158,8 @@ button {
   width: 400px;
   height: 500px;
   float: left;
+  border-radius: 5px;
 }
-
-
-
 
 /*Estilização Container Sobre/About*/
 
@@ -173,15 +168,14 @@ button {
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
   text-align: center;
 }
-
-/*Estilização Container Redes*/
+/*Estilização Container Redes Sociais*/
 
 .container-redes {
   display: flex;
@@ -224,15 +218,9 @@ button {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1;
+  z-index: -100;
   transform: translate(-50%, -50%);
 }
-
-
-
-
-
-
 
 /*Responsive  */
 @media (max-width: 415px) {
@@ -243,11 +231,10 @@ button {
     justify-items: center;
     gap: 2px;
   }
-  
-  nav{
-    width: 415px!important;
-    gap:2px!important;
 
+  nav {
+    width: 415px !important;
+    gap: 2px !important;
   }
   /*span do menu Hover */
   nav span {
@@ -256,113 +243,112 @@ button {
     left: 0;
     width: 348px !important;
     height: 100%;
-
-    border-radius: 8px;
+    border-radius: 5px;
     transition: 0.5s;
   }
 
-nav a:nth-child(1):hover ~ span {
-  left: 39px!important;
-  width: 54px !important;
-}
+  nav a:nth-child(1):hover ~ span {
+    left: 39px !important;
+    width: 54px !important;
+  }
 
-nav a:nth-child(2):hover ~ span {
-  left: 102px!important;
-  width: 78px !important;
-}
+  nav a:nth-child(2):hover ~ span {
+    left: 102px !important;
+    width: 78px !important;
+  }
 
-nav a:nth-child(3):hover ~ span {
-  left: 185px!important;
-  width: 60px !important;
-}
+  nav a:nth-child(3):hover ~ span {
+    left: 185px !important;
+    width: 60px !important;
+  }
 
-nav a:nth-child(4):hover ~ span {
-  left: 255px!important;
-  width: 70px !important;
-}
-/*Botoes do Menu nav */
-nav a {
-  display: flex;
-  margin-left: 5px;
+  nav a:nth-child(4):hover ~ span {
+    left: 255px !important;
+    width: 70px !important;
+  }
 
-  border-radius: 12px;
-}
+  /*Botoes do Menu nav */
 
-nav .home {
-  display: flex;
-  justify-content: center;
-  width: 68px;
-}
+  nav a {
+    display: flex;
+    margin-left: 5px;
+  }
 
-nav .projects {
-  display: flex;
-  justify-content: center;
-  width: 68px;
-  gap: 10px !important;
-}
+  nav .home {
+    display: flex;
+    justify-content: center;
+    width: 68px;
+  }
 
-nav .about {
-  display: flex;
-  justify-content: center;
-  width: 68px;
-  gap: 10px !important;
-}
-nav .contact {
-  display: flex;
-  justify-content: center;
-  width: 68px;
-  gap: 10px !important;
-}
+  nav .projects {
+    display: flex;
+    justify-content: center;
+    width: 68px;
+    gap: 10px !important;
+  }
 
-.conteudo-subtitulo {
-  color: #fff9f9;
-}
+  nav .about {
+    display: flex;
+    justify-content: center;
+    width: 68px;
+    gap: 10px !important;
+  }
+  nav .contact {
+    display: flex;
+    justify-content: center;
+    width: 68px;
+    gap: 10px !important;
+  }
 
-/*Estilização slider RESPONSIVE */
+  .conteudo-subtitulo {
+    color: #fff9f9;
+  }
 
-.pj1 h3 {
-  letter-spacing: 2px;
-  color: #ffffff;
-  font-size: 10px;
-}
-.pj2 h3 {
-  letter-spacing: 2px;
-  color: #ffffff;
-  font-size: 10px;
-}
-.pj3 h3 {
-  letter-spacing: 2px;
-  color: #ffffff;
-  font-size: 10px;
-}
-.pj4 h3 {
-  letter-spacing: 2px;
-  color: #ffffff;
-  font-size: 10px;
-}
+  /*Estilização slider RESPONSIVE */
 
-h3:hover {
-  color: #fff700;
-}
+  .pj1 h3 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  .pj2 h3 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  .pj3 h3 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 10px;
+  }
+  .pj4 h3 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 10px;
+  }
 
-.container-sobre {
-  padding: 20px;
-  margin-top: 0px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  font-size: 12px;
-}
+  h3:hover {
+    color: #fff700;
+  }
 
-.container-rodape {
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #000000aa;
-  padding: 20px;
-}
+  .container-sobre {
+    padding: 20px;
+    margin-top: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .container-rodape {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #000000aa;
+    padding: 20px;
+  }
 }
